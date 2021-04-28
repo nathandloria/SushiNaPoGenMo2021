@@ -12,10 +12,10 @@ def pos_tokenize(instr: str):
     words = []
     pos = {}
     for x in tagged:
-        if not x[0] in words:
+        if not x[0].lower() in words:
             words.append(x[0].lower())
         try:
-            if not x[0] in pos[x[1]]:
+            if not x[0].lower() in pos[x[1]]:
                 pos[x[1]].append(x[0].lower())
         except:
             ls = [x[0].lower()]

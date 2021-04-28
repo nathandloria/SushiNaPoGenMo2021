@@ -24,6 +24,7 @@ def pos_tokenize(instr: str):
     return pos, words
 
 
+# Parts of speech IDs from nltk:
 # CC coordinating conjunction
 # CD cardinal digit
 # DT determiner

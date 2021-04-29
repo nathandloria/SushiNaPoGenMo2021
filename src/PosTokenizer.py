@@ -1,5 +1,4 @@
 import nltk
-import random
 
 
 def pos_tokenize(instr: str):

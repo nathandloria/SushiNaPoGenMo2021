@@ -21,3 +21,4 @@ if __name__ == "__main__":
     # print(search_results)
     url = "https://www.forbes.com/sites/jackbrewster/2021/04/30/biden-sticks-with-his-mask-as-critics-claim-hes-sending-the-wrong-message-about-vaccines/?sh=4ce813614b06"
     print(scrape_article(url))
+    # TODO: fix article download error

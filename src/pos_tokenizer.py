@@ -23,10 +23,6 @@ def pos_tokenize(instr: str):
 
     return pos, words
 
-if __name__ == "__main__":
-    pos, words = pos_tokenize("Hello World, hows it going?")
-    print(words)
-    print(pos)
 
 # Parts of speech IDs from nltk:
 # CC coordinating conjunction

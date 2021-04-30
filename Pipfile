@@ -12,8 +12,8 @@ pylint = "*"
 [packages]
 nltk = "*"
 GoogleNews= "*"
-newspaper3k = "*"
-
+beautifulsoup4 = "*"
+requests = "*"
 
 [pipenv]
 allow_prereleases = true

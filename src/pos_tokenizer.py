@@ -16,12 +16,17 @@ def pos_tokenize(instr: str):
         try:
             if not x[0].lower() in pos[x[1]]:
                 pos[x[1]].append(x[0].lower())
+        # FIXME: error here, exception needs to be specified
         except:
             ls = [x[0].lower()]
             pos[x[1]] = ls
 
     return pos, words
 
+if __name__ == "__main__":
+    pos, words = pos_tokenize("Hello World, hows it going?")
+    print(words)
+    print(pos)
 
 # Parts of speech IDs from nltk:
 # CC coordinating conjunction

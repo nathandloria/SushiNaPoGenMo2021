@@ -1,0 +1,19 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+black = "*"
+flake8 = "*"
+pytest = "*"
+pylint = "*"
+
+[packages]
+nltk = "*"
+GoogleNews= "*"
+newspaper3k = "*"
+
+
+[pipenv]
+allow_prereleases = true

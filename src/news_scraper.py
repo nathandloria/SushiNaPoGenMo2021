@@ -4,7 +4,7 @@ from GoogleNews import GoogleNews
 from bs4 import BeautifulSoup
 
 
-def get_search_results(keyword: st):
+def get_search_results(keyword: str):
     googlenews = GoogleNews(lang="en", period="7d", encode="utf-8")
     googlenews.get_news(keyword)
     googlenews.search(keyword)
@@ -13,7 +13,7 @@ def get_search_results(keyword: st):
     return results[0:5]
 
 
-def scrape_article(link: st):
+def scrape_article(link: str):
     headers = {
         "Access-Control-Allow-Origin": "*",
         "Access-Control-Allow-Methods": "GET",

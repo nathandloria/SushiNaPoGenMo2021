@@ -4,7 +4,7 @@ from GoogleNews import GoogleNews
 from bs4 import BeautifulSoup
 
 
-def get_search_results(keyword: str):
+def get_search_results(keyword: st):
     googlenews = GoogleNews(lang="en", period="7d", encode="utf-8")
     googlenews.get_news(keyword)
     googlenews.search(keyword)
@@ -13,7 +13,7 @@ def get_search_results(keyword: str):
     return results[0:5]
 
 
-def scrape_article(link: str):
+def scrape_article(link: st):
     headers = {
         "Access-Control-Allow-Origin": "*",
         "Access-Control-Allow-Methods": "GET",
@@ -27,11 +27,11 @@ def scrape_article(link: str):
     cont = []
 
     for p in ps:
-        str = p.get_text()
-        if not "https://" in str.lower():
-            if "about us" in str.lower():
+        st = p.get_text()
+        if not "https://" in st.lower():
+            if "about us" in st.lower():
                 break
             else:
-                cont.append(str.lower().rstrip())
+                cont.append(st.lower().rstrip())
 
     return cont

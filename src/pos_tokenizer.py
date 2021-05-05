@@ -17,8 +17,7 @@ def pos_tokenize(instr: str):
         try:
             if not x[0].lower() in pos[x[1]]:
                 pos[x[1]].append(x[0].lower())
-        # FIXME: error here, exception needs to be specified
-        except:
+        except KeyError:
             ls = [x[0].lower()]
             pos[x[1]] = ls
 

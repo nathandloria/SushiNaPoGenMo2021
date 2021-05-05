@@ -31,7 +31,7 @@ def main():
 
     print(f"\n+---+ Your poem from the news surrounding {search_term} +---+")
     print(
-        f"\n{random.choice(pos['DT']).capitalize()} {random.choice(pos['NN'])}.\n{random.choice(pos['JJ']).capitalize()} {random.choice(pos['CC'])} {random.choice(pos['JJ'])}.\n{random.choice(pos['VB']).capitalize()} {random.choice(pos['CC'])} {random.choice(pos['VB'])}.\n{random.choice(pos['RB']).capitalize()}.\n{random.choice(pos['NN']).capitalize()}."
+        f"\n{random.choice(pos['DT']).capitalize()} {random.choice(pos['NN'])}\n{random.choice(pos['JJ']).capitalize()} {random.choice(pos['CC'])} {random.choice(pos['JJ'])}\n{random.choice(pos['VB']).capitalize()} {random.choice(pos['CC'])} {random.choice(pos['VB'])}\n{random.choice(pos['RB']).capitalize()}\n{random.choice(pos['NN']).capitalize()}"
     )
 
 

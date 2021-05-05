@@ -27,11 +27,11 @@ def scrape_article(link: str):
     cont = []
 
     for p in ps:
-        str = p.get_text()
-        if not "https://" in str.lower():
-            if "about us" in str.lower():
+        st = p.get_text()
+        if not "https://" in st.lower():
+            if "about us" in st.lower():
                 break
             else:
-                cont.append(str.lower().rstrip())
+                cont.append(st.lower().rstrip())
 
     return cont

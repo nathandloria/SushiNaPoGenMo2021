@@ -3,11 +3,9 @@ import random
 import news_scraper as ns
 import pos_tokenizer as tok
 
-
 def filter_chars_and_normalize(str_data: str):
     pattern = re.compile(r"\W+")
     return pattern.sub(" ", str_data).lower()
-
 
 def main():
     search_term = input("Please enter the desired search term: ")

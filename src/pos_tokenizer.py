@@ -23,6 +23,7 @@ def pos_tokenize(instr: str):
 
     return pos, words
 
+
 nltk.download('wordnet')
 wnl = WordNetLemmatizer()
 

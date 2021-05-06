@@ -24,20 +24,12 @@ def pos_tokenize(instr: str):
     return pos, words
 
 
-nltk.download('wordnet')
-wnl = WordNetLemmatizer()
-
 def isplural(word):
+    nltk.download('wordnet', quiet=True)
+    wnl = WordNetLemmatizer()
     lemma = wnl.lemmatize(word, 'n')
     plural = True if word is not lemma else False
     return plural, lemma
-
-nounls = ['geese', 'mice', 'bars', 'foos', 'foo',
-                'families', 'family', 'dog', 'dogs']
-
-for nn in nounls:
-    isp, lemma = isplural(nn)
-    print (nn, lemma, isp)
 
 # Parts of speech IDs from nltk:
 # CC coordinating conjunction

@@ -24,7 +24,7 @@ def pos_tokenize(instr: str):
     return pos, words
 
 
-def isplural(word):
+def is_plural(word):
     nltk.download('wordnet', quiet=True)
     wnl = WordNetLemmatizer()
     lemma = wnl.lemmatize(word, 'n')
